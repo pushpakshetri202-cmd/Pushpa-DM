@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ColorSplash Clothing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      background: rgba(255,255,255,0.8);
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ff4081;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255,255,255,0.6);
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff4081;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      margin: 15px;
+      width: 250px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    .product h3 {
+      margin: 15px;
+      color: #ff4081;
+    }
+    .product p {
+      margin: 0 15px 15px;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.7);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>ColorSplash Clothing</header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="hero">
+    <h1>Be Bold. Be Colorful.</h1>
+    <p>Discover fashion that makes you shine!</p>
+  </section>
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x200/ff4081/ffffff?text=Summer+Dress" alt="Summer Dress">
+      <h3>Summer Dress</h3>
+      <p>Light, breezy, and full of color.</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x200/3f51b5/ffffff?text=Denim+Jacket" alt="Denim Jacket">
+      <h3>Denim Jacket</h3>
+      <p>Classic style with a modern twist.</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x200/4caf50/ffffff?text=Casual+Tee" alt="Casual Tee">
+      <h3>Casual Tee</h3>
+      <p>Comfort meets vibrant design.</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2026 ColorSplash Clothing | Designed with ❤️
+  </footer>
+</body>
+</html>
